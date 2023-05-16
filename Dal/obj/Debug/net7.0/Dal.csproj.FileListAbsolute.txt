@@ -1,0 +1,17 @@
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\Dal.deps.json
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\Dal.runtimeconfig.json
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\Dal.dll
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\Dal.pdb
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\DomainModel.dll
+C:\Users\antoi\source\repos\NursePlanning\Dal\bin\Debug\net7.0\DomainModel.pdb
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.csproj.AssemblyReference.cache
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.AssemblyInfoInputs.cache
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.AssemblyInfo.cs
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.csproj.CopyComplete
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.dll
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\refint\Dal.dll
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.pdb
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\Dal.genruntimeconfig.cache
+C:\Users\antoi\source\repos\NursePlanning\Dal\obj\Debug\net7.0\ref\Dal.dll

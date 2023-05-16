@@ -1,0 +1,86 @@
+﻿<Window x:Class="WpfNursePlanning.AppointmentList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNursePlanning"
+        mc:Ignorable="d"
+        Title="AppointmentList" Height="650" Width="1024" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+        <DataGrid Name="dgrRdv" AutoGenerateColumns="False" IsReadOnly="true"  HorizontalAlignment="Left" Height="336" Margin="30,91,0,0" VerticalAlignment="Top" Width="972" CanUserDeleteRows="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Path=Date, IsAsync=True}" Width="*"/>
+                <DataGridTemplateColumn Header="Domicile">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox Name="chkHome" IsChecked="{Binding Path=AtHome}" IsEnabled="False"></CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Patient" Binding="{Binding Path=patientId, IsAsync=True}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Path=Status, IsAsync=True}" Width="*"/>
+                <DataGridTemplateColumn Header="Patient">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="btnDetailPatient" >Patient</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="btnRetour" Content="          Retour" FontWeight="Bold" Click="btnRetourRdv" HorizontalAlignment="Left" Height="43" Margin="10,597,0,0" VerticalAlignment="Top" Width="97">
+            <Button.Background>
+                <ImageBrush ImageSource="/back.png" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Image Source="/rdv.jpg" HorizontalAlignment="Left" Height="86" Margin="32,0,0,0" VerticalAlignment="Top" Width="129" >
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/rdv.jpg"/>
+            </Image.OpacityMask>
+        </Image>
+
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="145,516,0,0" VerticalAlignment="Top" Width="49" Height="26" RenderTransformOrigin="-0.057,0.554"/>
+        <TextBox Name="txtLastName" IsEnabled="False"  HorizontalAlignment="Left" Margin="245,519,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="20"/>
+
+        <Label Content="Prènom" HorizontalAlignment="Left" Margin="145,558,0,0" VerticalAlignment="Top" Width="65" Height="26" RenderTransformOrigin="-0.057,0.554"/>
+        <TextBox Name="txtFirstName"  IsEnabled="False" HorizontalAlignment="Left" Margin="245,561,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="20"/>
+
+        <Label Content="N° Téléphone:" HorizontalAlignment="Left" Margin="137,605,0,0" VerticalAlignment="Top" Width="103" Height="26" RenderTransformOrigin="-0.057,0.554"/>
+        <TextBox Name="txtPhoneNumber"  IsEnabled="False" HorizontalAlignment="Left" Margin="245,605,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="20" RenderTransformOrigin="1.331,1.65"/>
+
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="415,602,0,0" VerticalAlignment="Top" Width="102" Height="26" RenderTransformOrigin="-0.057,0.554"/>
+        <TextBox Name="txtEmail"  IsEnabled="False" HorizontalAlignment="Left" Margin="487,605,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="20"/>
+
+        <CheckBox Name="chkIsActiveRdv" IsEnabled="False" IsChecked="{Binding Path=IsActive, IsAsync=True}" Content="Active" HorizontalAlignment="Left" Margin="814,532,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,0.662"/>
+
+        <Label  Content="Date de Naissance :" HorizontalAlignment="Left" Margin="411,562,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.552,0.944"/>
+        <DatePicker  Name="dpBithDay" IsEnabled="False" HorizontalAlignment="Left" Margin="557,562,0,0" VerticalAlignment="Top" Width="154" Height="26"/>
+
+        <Label Content="N°S.Social :" HorizontalAlignment="Left" Margin="411,517,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox Name="txtSsNumber" IsEnabled="False" HorizontalAlignment="Left" Margin="487,522,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="21"/>
+
+        <Label Content="Adresse :" HorizontalAlignment="Left" Margin="744,569,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox Name="txtAdress" IsEnabled="False" HorizontalAlignment="Left" Margin="814,582,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Height="43"/>
+        <Label Content="Liste des rendez-vous de l'infirmier(e) :" FontSize="20" Foreground="Blue" HorizontalAlignment="Left" Height="42" Margin="255,22,0,0" VerticalAlignment="Top" Width="343"/>
+        <!--<Label Content="Informations Patient :" FontSize="20" HorizontalAlignment="Left" Height="33" Margin="155,465,0,0" VerticalAlignment="Top" Width="226"/>-->
+        <Label Name="lblNurseName" HorizontalAlignment="Left" Margin="603,26,0,0" VerticalAlignment="Top" Width="172" Height="34" FontSize="16" FontWeight="Bold">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF9C29B6" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <GroupBox Header="Information Patient(e) : " FontSize="25" Margin="118,450,20,10" BorderBrush="Black"/>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\Repository.deps.json
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\Repository.dll
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\Repository.pdb
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\Dal.dll
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\DomainModel.dll
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\Dal.pdb
+C:\Users\antoi\source\repos\NursePlanning\Repository\bin\Debug\net7.0\DomainModel.pdb
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.dll
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\antoi\source\repos\NursePlanning\Repository\obj\Debug\net7.0\ref\Repository.dll

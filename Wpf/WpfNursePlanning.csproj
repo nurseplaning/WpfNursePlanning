@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Icones\**" />
+    <EmbeddedResource Remove="Icones\**" />
+    <None Remove="Icones\**" />
+    <Page Remove="Icones\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="back.png" />
+    <None Remove="infermiere.png" />
+    <None Remove="Modifier.jfif" />
+    <None Remove="modifier.jpg" />
+    <None Remove="patient.png" />
+    <None Remove="quitter.png" />
+    <None Remove="rdv.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dal\Dal.csproj" />
+    <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="back.png" />
+    <Resource Include="infermiere.png" />
+    <Resource Include="Modifier.jfif" />
+    <Resource Include="modifier.jpg" />
+    <Resource Include="patient.png" />
+    <Resource Include="quitter.png" />
+    <Resource Include="rdv.jpg" />
+  </ItemGroup>
+
+</Project>
